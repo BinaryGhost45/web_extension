@@ -4,7 +4,12 @@ A real-time, in-browser Digital Signal Processing (DSP) suite and floating HUD o
 
 ## Demo
 
-https://github.com/Web_extension/Audio FX & Reverb Tool(AuraFX)/demo_1.mp4
+https://x.com/Binary_Ghost45/status/2090344425587417488
+
+> **Demo Audio Track:** Warriyo - Mortals (feat. Laura Brehm) [NCS Release]  
+> **Music provided by:** NoCopyrightSounds
+
+
 
 ## Key Features
 
