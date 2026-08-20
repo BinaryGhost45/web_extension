@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Audio FX & Reverb Tool(AuraFX)",
+  "version": "1.0",
+  "description": "Control real-time equalizer, bass boost, volume amplification, and reverb for any HTML5 video using Alt + H.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["logic.js"],
+      "css": ["popup.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
