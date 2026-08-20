@@ -4,8 +4,7 @@ A real-time, in-browser Digital Signal Processing (DSP) suite and floating HUD o
 
 ## Demo
 
-https://x.com/Binary_Ghost45/status/2090344425587417488
-
+https://x.com/Binary_Ghost45/status/2090349597503987772
 > **Demo Audio Track:** Warriyo - Mortals (feat. Laura Brehm) [NCS Release]  
 > **Music by:** NoCopyrightSounds
 
