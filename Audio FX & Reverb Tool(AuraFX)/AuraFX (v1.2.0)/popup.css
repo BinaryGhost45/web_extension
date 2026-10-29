@@ -1,0 +1,190 @@
+#audio-fx-panel {
+  --fx-bg: rgba(15, 15, 18, 0.80);
+  --fx-border: rgba(255, 255, 255, 0.16);
+  --fx-text-main: #ffffff;
+  --fx-text-sub: #dddddd;
+  --fx-accent: #00e5ff;
+  --fx-accent-glow: rgba(0, 229, 255, 0.7);
+  --fx-btn-bg: rgba(255, 255, 255, 0.12);
+  --fx-btn-hover: rgba(255, 255, 255, 0.25);
+  --fx-slider-track: rgba(255, 255, 255, 0.22);
+  --fx-input-bg: rgba(0, 0, 0, 0.45);
+  --fx-shadow: 0 12px 35px rgba(0, 0, 0, 0.8);
+
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  width: 320px !important;
+  background: var(--fx-bg) !important;
+  border: 1px solid var(--fx-border) !important;
+  box-shadow: var(--fx-shadow) !important;
+  border-radius: 12px !important;
+  padding: 14px 16px !important;
+  z-index: 2147483647 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  color: var(--fx-text-main) !important;
+  user-select: none !important;
+  backdrop-filter: blur(12px) !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+#audio-fx-panel.light-theme {
+  --fx-bg: rgba(245, 246, 250, 0.80);
+  --fx-border: rgba(0, 0, 0, 0.12);
+  --fx-text-main: #1e2022;
+  --fx-text-sub: #55585c;
+  --fx-accent: #0077ff;
+  --fx-accent-glow: rgba(0, 119, 255, 0.4);
+  --fx-btn-bg: rgba(0, 0, 0, 0.08);
+  --fx-btn-hover: rgba(0, 0, 0, 0.16);
+  --fx-slider-track: rgba(0, 0, 0, 0.15);
+  --fx-input-bg: rgba(255, 255, 255, 0.85);
+  --fx-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+#audio-fx-panel.hidden {
+  display: none !important;
+}
+
+.fx-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  border-bottom: 1px solid var(--fx-border) !important;
+  padding-bottom: 6px !important;
+}
+
+.fx-title {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: var(--fx-accent) !important;
+}
+
+.fx-header-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.fx-btn {
+  background: var(--fx-btn-bg) !important;
+  border: none !important;
+  color: var(--fx-text-sub) !important;
+  font-size: 11px !important;
+  padding: 3px 8px !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.fx-btn:hover {
+  background: var(--fx-btn-hover) !important;
+  color: var(--fx-text-main) !important;
+}
+
+.fx-preset-row {
+  display: flex !important;
+  gap: 5px !important;
+  align-items: center !important;
+}
+
+.fx-dropdown,
+.fx-name-input {
+  background: var(--fx-input-bg) !important;
+  border: 1px solid var(--fx-border) !important;
+  color: var(--fx-text-main) !important;
+  font-size: 11px !important;
+  padding: 3px 6px !important;
+  border-radius: 4px !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+}
+
+.fx-dropdown {
+  flex: 1 !important;
+  cursor: pointer !important;
+}
+
+.fx-name-input {
+  width: 85px !important;
+}
+
+.fx-control-group {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 3px !important;
+}
+
+.fx-label-row {
+  display: flex !important;
+  justify-content: space-between !important;
+  font-size: 12px !important;
+  color: var(--fx-text-sub) !important;
+  font-weight: 500 !important;
+}
+
+.fx-val {
+  font-variant-numeric: tabular-nums !important;
+  color: var(--fx-accent) !important;
+  font-weight: 600 !important;
+}
+
+.fx-slider {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  width: 100% !important;
+  height: 5px !important;
+  background: var(--fx-slider-track) !important;
+  border-radius: 3px !important;
+  outline: none !important;
+  cursor: pointer !important;
+  margin: 3px 0 !important;
+}
+
+.fx-slider::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  width: 13px !important;
+  height: 13px !important;
+  border-radius: 50% !important;
+  background: var(--fx-accent) !important;
+  box-shadow: 0 0 6px var(--fx-accent-glow) !important;
+  cursor: pointer !important;
+}
+
+.fx-num-input {
+  width: 58px !important;
+  background: var(--fx-input-bg) !important;
+  border: 1px solid var(--fx-border) !important;
+  color: var(--fx-accent) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  text-align: right !important;
+  padding: 2px 4px !important;
+  border-radius: 4px !important;
+  outline: none !important;
+  font-variant-numeric: tabular-nums !important;
+}
+
+.fx-num-input::-webkit-inner-spin-button,
+.fx-num-input::-webkit-outer-spin-button {
+  opacity: 0.7;
+}
+
+.fx-footer {
+  margin-top: 4px !important;
+  padding-top: 6px !important;
+  border-top: 1px solid var(--fx-border) !important;
+  text-align: center !important;
+  font-size: 10px !important;
+  color: var(--fx-text-sub) !important;
+  opacity: 0.8 !important;
+}
+
+.fx-footer strong {
+  color: var(--fx-accent) !important;
+}
